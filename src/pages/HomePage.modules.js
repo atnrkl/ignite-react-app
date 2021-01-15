@@ -22,6 +22,7 @@ export const GameList = () => {
       <SectionTitle>Popular Games</SectionTitle>
       <SMgameList>
         <SMgames>
+          {/* map the popular games and create a game card for each */}
           {popularGames.map((item, index) => (
             <Game game={item} key={index} id={item.id} />
           ))}

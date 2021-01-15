@@ -13,7 +13,7 @@ const Game = ({ game }) => {
   const loadDetailHandler = () => {
     dispatch(loadDetail(game.slug));
   };
-
+  //? game card
   return (
     <StyledGame onClick={loadDetailHandler}>
       <h1>{game.name}</h1>
